@@ -17,6 +17,7 @@ require_once "strings.php";
 
 require_once "access_control.php";
 
+
 //initialize $errors array
 $errors = [];
 
