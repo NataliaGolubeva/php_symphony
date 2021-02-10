@@ -9,10 +9,8 @@ $user = LoginCheck();
 
 if ( $user )
 {
-    $user = new User();
-
     $_SESSION['user'] = $user;
-    $_SESSION['msgs'][] = "Welkom, " . $_SESSION['user']->getUsrVoornaam();
+    $_SESSION['msgs'][] = "Welkom, " . $_SESSION['user']['usr_voornaam'];
     GoHome();
 }
 else
@@ -69,18 +67,7 @@ function LoginCheck()
         {
             foreach ( $data as $row )
             {
-                if ( password_verify( $ww, $row['usr_password'] ))
-                {
-                $user = new User();
-                $user->setUsrId( $row['usr_id']);
-                $user->setUsrVoornaam( $row['usr_voornaam'] );
-                $user->setUsrNaam( $row['usr_naam'] );
-                $user->setUsrEmail( $row['usr_email'] );
-                //$user->setUsrTelefoon( $row['usr_telefoon'] );
-
-                return $user;
-                }
-
+                if ( password_verify( $ww, $row['usr_password'] ) ) return $row;
             }
         }
 

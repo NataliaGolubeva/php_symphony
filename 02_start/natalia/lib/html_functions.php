@@ -19,19 +19,7 @@ function PrintNavbar( )
 {
     $navbar = file_get_contents("templates/navbar.html");
 
-    if ( isset($_SESSION['user']))
-    {
-        $user = new User();
-
-        $_SESSION['user'] = $user;
-       // $username = $_SESSION['user']['usr_voornaam'] . " " . $_SESSION['user']['usr_naam'];
-        $username = $_SESSION['user']->getUsrVoornaam() . " " . $_SESSION['user']->getUsrNaam();
-    }
-    else
-    {
-        $username = "Niet ingelogd";
-    }
-
+    $username = $_SESSION['user']['usr_voornaam'] . " " . $_SESSION['user']['usr_naam'];
     $navbar = str_replace("@username@", $username, $navbar );
 
     print $navbar;

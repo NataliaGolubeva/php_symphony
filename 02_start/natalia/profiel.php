@@ -4,7 +4,6 @@ ini_set( 'display_errors', 1 );
 
 $public_access = false;
 require_once "lib/autoload.php";
-require_once "models/User.php";
 
 PrintHead();
 PrintJumbo( $title = "Profiel", $subtitle = "" );
@@ -16,24 +15,9 @@ PrintNavbar();
 
         <?php
             //get data
-           // $data = GetData( "select * from user where usr_id=" . $_SESSION['user']['usr_id'] );
-       // var_dump($_SESSION['user']); die();
-        $data = GetData( "select * from user where usr_id=" . $_SESSION['user']->getUsrId() );
+            $data = GetData( "select * from user where usr_id=" . $_SESSION['user']['usr_id'] );
 
-          /*  $user = $_SESSION['user'];
-            $data = [];
-            $data[0] = [
-                    "usr_id" => $user->getUsrId(),
-                    "usr_voornaam" => $user->getUsrVoornaam(),
-                    "usr_naam" => $user->getUsrNaam(),
-                    "usr_email" => $user->getUsrEmail(),
-                    "usr_telefoon" => $user->getUsrTelefoon(),
-                ]; */
-
-
-
-
-        //get template
+            //get template
             $output = file_get_contents("templates/profiel.html");
 
             //add extra elements

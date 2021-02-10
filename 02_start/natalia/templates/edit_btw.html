@@ -1,0 +1,38 @@
+
+<!--  SDR: (V3 -3) naamgeving bestand !!! -->
+<!-- // Zie opgave: ... gaat hij naar een nieuw te maken formulier, btw_form.php, waarbij ook een template hoort btw_form.html ... !!! -->
+
+<form class="frmStandard" id="mainform" name="mainform" method="POST" action="lib/save.php">
+
+    <!-- meta info -->
+    <input type="hidden" id="table" name="table" value="eu_btw_codes">
+    <input type="hidden" id="pkey" name="pkey" value="eub_id">
+    <input type="hidden" id="afterinsert" name="afterinsert" value="btw.php">
+    <input type="hidden" id="afterupdate" name="afterupdate" value="btw.php">
+
+    <!-- SDR: (V3 -2) missing CSRF: opslaan lukt daardoor niet  -->
+    <!-- SDR: (V3 -2) geen hidden element eub_id: hoe gaan we dan opslaan???  -->
+
+    <div class="form-group row">
+        <label for="eub_land" class="col-sm-4 col-form-label">land</label>
+        <div class="col-sm-6">
+            <input type="text" class="form-control-plaintext" id="eub_land" name="eub_land" value="@eub_land@">
+
+        </div>
+    </div>
+
+    <div class="form-group row">
+        <label for="eub_code" class="col-sm-4 col-form-label">Code</label>
+        <div class="col-sm-6">
+            <input type="text" class="form-control-plaintext" id="eub_code" name="eub_code" value="@eub_code@">
+
+        </div>
+    </div>
+    <div class="form-group row">
+        <label class="col-sm-4 col-form-label"></label>
+        <div class="col-sm-6">
+            <input class="btn btn-success" name="btnOpslaan" type="submit" value="Opslaan">
+            <input class="btn btn-danger" name="btnAnnuleren" type="submit" value="Annuleren">
+        </div>
+    </div>
+</form>
