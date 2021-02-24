@@ -109,7 +109,7 @@ function SaveFormData()
         $sql .= $where;
 
         //run SQL
-        $result = ExecuteSQL( $sql );
+        $result = $this-> ExecuteSQL( $sql );
 
         //output if not redirected
         print $sql ;

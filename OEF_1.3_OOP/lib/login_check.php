@@ -6,10 +6,10 @@ $public_access = true;
 require_once "autoload.php";
 
 $user = LoginCheck();
+//var_dump($user);die;
 
 if ( $user )
 {
-    $user = new User();
 
     $_SESSION['user'] = $user;
     $_SESSION['msgs'][] = "Welkom, " . $_SESSION['user']->getUsrVoornaam();
@@ -23,6 +23,7 @@ else
 
 function LoginCheck()
 {
+    global $ms;
     if ( $_SERVER['REQUEST_METHOD'] == "POST" )
     {
         //controle CSRF token
@@ -52,7 +53,7 @@ function LoginCheck()
         }
 
         //terugkeren naar afzender als er een fout is
-        if ( key_exists("errors" , $_SESSION ) AND count($_SESSION['errors']) > 0 )
+        if ($ms->CountErrors() >  0 || $ms->CountNewErrors() > 0)
         {
             $_SESSION['OLD_POST'] = $_POST;
             header( "Location: " . $sending_form_uri ); exit();
