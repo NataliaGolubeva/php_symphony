@@ -18,6 +18,8 @@ require_once $_SERVER['DOCUMENT_ROOT'] . $app_root . "/models/City.php";
 require_once $_SERVER['DOCUMENT_ROOT'] . $app_root . "/models/User.php";
 require_once $_SERVER['DOCUMENT_ROOT'] . $app_root . "/services/Logger.php";
 require_once $_SERVER['DOCUMENT_ROOT'] . $app_root . "/services/MessageService.php";
+require_once $_SERVER['DOCUMENT_ROOT'] . $app_root . "/services/DBManager.php";
+
 
 
 session_start();
