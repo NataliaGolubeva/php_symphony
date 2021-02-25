@@ -9,6 +9,7 @@ SaveFormData();
 
 function SaveFormData()
 {
+    global $dbm;
     global $ms;
     global $app_root;
 
@@ -109,7 +110,7 @@ function SaveFormData()
         $sql .= $where;
 
         //run SQL
-        $result = $this-> ExecuteSQL( $sql );
+        $result = $dbm-> ExecuteSQL( $sql );
 
         //output if not redirected
         print $sql ;

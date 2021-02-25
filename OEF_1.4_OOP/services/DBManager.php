@@ -42,6 +42,8 @@ class DBManager
         {
             $rows = $result->fetchAll(PDO::FETCH_BOTH);
             return $rows;
+
+
         }
         else
         {

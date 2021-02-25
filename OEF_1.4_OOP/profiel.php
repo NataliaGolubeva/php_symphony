@@ -15,10 +15,11 @@ PrintNavbar();
     <div class="row">
 
         <?php
+        global $dbm;
             //get data
            // $data = GetData( "select * from user where usr_id=" . $_SESSION['user']['usr_id'] );
        // var_dump($_SESSION['user']); die();
-        $data = $this->GetData( "select * from user where usr_id=" . $_SESSION['user']->getUsrId() );
+        $data = $dbm->GetData( "select * from user where usr_id=" . $_SESSION['user']->getUsrId() );
 
           /*  $user = $_SESSION['user'];
             $data = [];

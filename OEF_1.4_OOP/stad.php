@@ -13,11 +13,11 @@ PrintJumbo($title = "Stad OO style" );
     <div class="row">
 
         <?php
-
+global $dbm;
         if ( ! isset( $_GET['img_id']) ) die("Geen img_id opgegeven");
         if ( ! is_numeric( $_GET['img_id']) ) die("Ongeldig argument " . $_GET['img_id'] . " opgegeven");
 
-        $rows = $this->GetData( "select * from images where img_id=" . $_GET['img_id'] );
+        $rows = $dbm->GetData( "select * from images where img_id=" . $_GET['img_id'] );
 
         if ( $rows )
         {

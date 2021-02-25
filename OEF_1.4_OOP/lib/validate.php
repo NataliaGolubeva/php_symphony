@@ -3,7 +3,8 @@ require_once "autoload.php";
 
 function CompareWithDatabase( $table, $pkey ): void
 {
-    $data = $this->GetData( "SHOW FULL COLUMNS FROM $table" );
+    global $dbm;
+    $data = $dbm->GetData( "SHOW FULL COLUMNS FROM $table" );
 
     //overloop alle in de databank gedefinieerde velden van de tabel
     foreach ( $data as $row )
@@ -101,8 +102,9 @@ function ValidateUsrEmail( $email )
 
 function CheckUniqueUsrEmail( $email )
 {
+    global $dbm;
     $sql = "SELECT * FROM user WHERE usr_email='" . $email . "'";
-    $rows = $this->GetData($sql);
+    $rows = $dbm->GetData($sql);
 
     if (count($rows) > 0)
     {

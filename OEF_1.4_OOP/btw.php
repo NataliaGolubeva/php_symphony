@@ -15,6 +15,7 @@ PrintNavbar();
     <div class="row">
 
 <?php
+global $dbm;
     //toon messages als er zijn
     foreach ( $msgs as $msg )
     {
@@ -22,7 +23,7 @@ PrintNavbar();
     }
 
     //get data
-    $data = $this->GetData( "select * from eu_btw_codes" );
+    $data = $dbm->GetData( "select * from eu_btw_codes" );
 
     $output ="";
     $output .= "<a class='btn btn-info' role='button' href='lib/export_btw.php'>Export CSV</a>";
