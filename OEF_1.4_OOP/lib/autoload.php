@@ -25,6 +25,7 @@ session_start();
 require_once "access_control.php";
 
 $ms = new MessageService();
+$dbm = new DBManager($configuration);
 //initialize $errors array
 $errors = [];
 
