@@ -15,15 +15,14 @@ PrintNavbar();
 
 <?php
 global $dbm;
-    //toon messages als er zijn
-    foreach ( $msgs as $msg )
-    {
-        print '<div class="msgs">' . $msg . '</div>';
-    }
+//toon messages als er zijn
+$ms->ShowErrors();
+$ms->ShowInfos();
 
-    //get data
+
+//get data
     $data = $dbm->GetData( "select * from images" );
-var_dump($data); die;
+
     //get template
     $template = file_get_contents("templates/column.html");
 

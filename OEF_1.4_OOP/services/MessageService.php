@@ -22,53 +22,66 @@ private $infos;
 
     public function CountErrors()
     {
-        return (isset($this->errors)) ? count($this->errors) : null;
+        return (isset($this->errors)) ? count($this->errors) : 0;
     }
 
     public function CountInputErrors()
     {
-        return (isset($this->input_errors)) ? count($this->input_errors) : null;
+        return (isset($this->input_errors)) ? count($this->input_errors) : 0;
     }
 
     public function CountInfos()
     {
-        return (isset($this->infos)) ? count($this->infos) : null;
+        return (isset($this->infos)) ? count($this->infos) : 0;
     }
 
     public function CountNewErrors() {
-        return (isset($_SESSION['errors'])) ? count($_SESSION['errors']) : null;
+        return (isset($_SESSION['errors'])) ? count($_SESSION['errors']) : 0;
     }
 
     public function CountNewInputErrors() {
-        return (isset($_SESSION['input_errors'])) ? count($_SESSION['input_errors']) : null;
+        return (isset($_SESSION['input_errors'])) ? count($_SESSION['input_errors']) : 0;
     }
 
     public function CountNewInfos() {
-        return (isset($_SESSION['msgs'])) ? count($_SESSION['msgs']) : null;
+        return (isset($_SESSION['msgs'])) ? count($_SESSION['msgs']) : 0;
 
     }
 
-    public function AddMessage( $type, $msg, $key = null ){
-        if ($type === 'input_error') {
-            array_push($_SESSION['input_errors'][$key . "_error"], $msg);
-        } else {
-            array_push($_SESSION('msgs'), $msg);
+    public function AddMessage( $type, $msg, $key = null )
+    {
+        if ( $type == "input_errors" )
+        {
+            $_SESSION[$type][$key] = $msg;
         }
-
-    }
-    public function GetInputErrors() {
-        if ($this->CountInputErrors()) {
-            return $this->input_errors;
-        } else {
-            return null;
+        else
+        {
+            $_SESSION[$type][] = $msg;
         }
     }
-    public function ShowErrors() {
-        print "<p style='color:red'>$this->errors</p>";
+    public function GetInputErrors()
+    {
+        return $this->input_errors;
     }
-
-    public function ShowInfos() {
-        print "<div class='msgs'>$this->infos</div>";
+    public function ShowErrors()
+    {
+        if ( $this->CountErrors() > 0 )
+        {
+            foreach ( $this->errors as $error )
+            {
+                print '<div class="error">' . $error . '</div>';
+            }
+        }
+    }
+    public function ShowInfos()
+    {
+        if ( $this->CountInfos() > 0 )
+        {
+            foreach ( $this->infos as $info )
+            {
+                print '<div class="msgs">' . $info . '</div>';
+            }
+        }
     }
 
 }

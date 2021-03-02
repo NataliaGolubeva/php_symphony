@@ -16,7 +16,6 @@ require_once "strings.php";
 // models
 require_once $_SERVER['DOCUMENT_ROOT'] . $app_root . "/models/City.php";
 require_once $_SERVER['DOCUMENT_ROOT'] . $app_root . "/models/User.php";
-require_once $_SERVER['DOCUMENT_ROOT'] . $app_root . "/services/Logger.php";
 require_once $_SERVER['DOCUMENT_ROOT'] . $app_root . "/services/MessageService.php";
 require_once $_SERVER['DOCUMENT_ROOT'] . $app_root . "/services/DBManager.php";
 
@@ -29,6 +28,7 @@ require_once "access_control.php";
 $ms = new MessageService();
 $dbm = new DBManager($configuration);
 //initialize $errors array
+/*
 $errors = [];
 
 if ( key_exists( 'errors', $_SESSION ) AND is_array( $_SESSION['errors']) )
@@ -45,7 +45,7 @@ if ( key_exists( 'msgs', $_SESSION ) AND is_array( $_SESSION['msgs']) )
     $msgs = $_SESSION['msgs'];
     $_SESSION['msgs'] = [];
 }
-
+*/
 //initialize $old_post
 $old_post = [];
 

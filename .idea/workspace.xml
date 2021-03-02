@@ -2,7 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c9b49986-fe39-4264-b279-86ce1a22948c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OEF_1.3_OOP/services/Logger.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OEF_1.3_OOP/services/MessageService.php" beforeDir="false" afterPath="$PROJECT_DIR$/OEF_1.3_OOP/services/MessageService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OEF_1.4_OOP/btw_form.php" beforeDir="false" afterPath="$PROJECT_DIR$/OEF_1.4_OOP/btw_form.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/OEF_1.4_OOP/lib/autoload.php" beforeDir="false" afterPath="$PROJECT_DIR$/OEF_1.4_OOP/lib/autoload.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OEF_1.4_OOP/lib/html_functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/OEF_1.4_OOP/lib/html_functions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OEF_1.4_OOP/lib/save.php" beforeDir="false" afterPath="$PROJECT_DIR$/OEF_1.4_OOP/lib/save.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OEF_1.4_OOP/lib/validate.php" beforeDir="false" afterPath="$PROJECT_DIR$/OEF_1.4_OOP/lib/validate.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OEF_1.4_OOP/profiel.php" beforeDir="false" afterPath="$PROJECT_DIR$/OEF_1.4_OOP/profiel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OEF_1.4_OOP/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/OEF_1.4_OOP/register.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OEF_1.4_OOP/services/Logger.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OEF_1.4_OOP/services/MessageService.php" beforeDir="false" afterPath="$PROJECT_DIR$/OEF_1.4_OOP/services/MessageService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OEF_1.4_OOP/stad_form.php" beforeDir="false" afterPath="$PROJECT_DIR$/OEF_1.4_OOP/stad_form.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OEF_1.4_OOP/steden.php" beforeDir="false" afterPath="$PROJECT_DIR$/OEF_1.4_OOP/steden.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +66,7 @@
       <updated>1612274628553</updated>
       <workItem from="1612274629712" duration="569000" />
       <workItem from="1612363852075" duration="22771000" />
-      <workItem from="1613391673688" duration="15104000" />
+      <workItem from="1613391673688" duration="19218000" />
     </task>
     <servers />
   </component>

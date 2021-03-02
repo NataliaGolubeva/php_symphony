@@ -22,29 +22,29 @@ private $infos;
 
     public function CountErrors()
     {
-        return (isset($this->errors)) ? count($this->errors) : null;
+        return (isset($this->errors)) ? count($this->errors) : 0;
     }
 
     public function CountInputErrors()
     {
-        return (isset($this->input_errors)) ? count($this->input_errors) : null;
+        return (isset($this->input_errors)) ? count($this->input_errors) : 0;
     }
 
     public function CountInfos()
     {
-        return (isset($this->infos)) ? count($this->infos) : null;
+        return (isset($this->infos)) ? count($this->infos) : 0;
     }
 
     public function CountNewErrors() {
-        return (isset($_SESSION['errors'])) ? count($_SESSION['errors']) : null;
+        return (isset($_SESSION['errors'])) ? count($_SESSION['errors']) : 0;
     }
 
     public function CountNewInputErrors() {
-        return (isset($_SESSION['input_errors'])) ? count($_SESSION['input_errors']) : null;
+        return (isset($_SESSION['input_errors'])) ? count($_SESSION['input_errors']) : 0;
     }
 
     public function CountNewInfos() {
-        return (isset($_SESSION['msgs'])) ? count($_SESSION['msgs']) : null;
+        return (isset($_SESSION['msgs'])) ? count($_SESSION['msgs']) : 0;
 
     }
 
