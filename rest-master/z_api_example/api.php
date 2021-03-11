@@ -15,12 +15,12 @@ if ( $method == "GET" AND $request_part == "spelers" )
     print json_encode( [ "msg" => $sql ] ) ; //normaal zou je hier alle spelers teruggeven
 }
 
-//GET speler: één speler geven
+//GET speler: ??n speler geven
 if ( $method == "GET" AND $request_part == "speler" )
 {
     $sql = "select * from spelers where spe_id=$id";
     // ... execute $sql
-    print json_encode( [ "msg" => $sql ] ) ; //normaal zou je hier één speler teruggeven
+    print json_encode( [ "msg" => $sql ] ) ; //normaal zou je hier ??n speler teruggeven
 }
 
 //POST spelers: een speler toevoegen
