@@ -32,30 +32,10 @@ foreach ($data as $key => $value ) {
     $value['temp'] = round(json_decode($response)->main->temp);
     $value['clouds'] = json_decode($response)->weather[0]->description;
     $value['humidity'] = json_decode($response)->main->humidity;
-   //$value['icon'] = json_decode($response)->weather[0]->icon;
     $value['weather_icon'] = '<img src="http://openweathermap.org/img/w/' .json_decode($response)->weather[0]->icon . '.png" height="35" width="auto">';
 
     $steden_data[$key] = $value;
 };
-/*
-$city_name = $data[0]["img_weather_location"];
-$api_url = 'https://api.openweathermap.org/data/2.5/weather?q=London&lang=nl&units=metric&appid=1ef157782ad7c4c31320e64307062ae5';
-$weather_data = json_decode(file_get_contents($api_url), true );
-$clouds = $weather_data['weather'][0]['description'];
-$temp = round($weather_data['main']['temp']);
-$humidity = $weather_data['main']['humidity'];
-echo $city_name;
-echo '<br>';
-echo $clouds;
-echo '<br>';
-echo $temp;
-echo '<br>';
-echo $humidity;
-*/
-
-
-
-
     //get template
     $template = file_get_contents("templates/column.html");
 

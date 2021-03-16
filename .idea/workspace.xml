@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c9b49986-fe39-4264-b279-86ce1a22948c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OEF_2.1_OOP/log/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/OEF_2.1_OOP/log/log.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/OEF_2.1_OOP/steden.php" beforeDir="false" afterPath="$PROJECT_DIR$/OEF_2.1_OOP/steden.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OEF_2.1_OOP/templates/column.html" beforeDir="false" afterPath="$PROJECT_DIR$/OEF_2.1_OOP/templates/column.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +56,7 @@
       <updated>1612274628553</updated>
       <workItem from="1612274629712" duration="569000" />
       <workItem from="1612363852075" duration="22771000" />
-      <workItem from="1613391673688" duration="38551000" />
+      <workItem from="1613391673688" duration="38640000" />
     </task>
     <servers />
   </component>
