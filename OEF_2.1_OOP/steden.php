@@ -23,7 +23,7 @@ PrintNavbar();
     //get data
     $data = $container->getDBManager()->GetData( "select * from images" );
 
-$weather_data = [];
+$steden_data = [];
 foreach ($data as $key => $value ) {
     $url = 'http://api.openweathermap.org/data/2.5/weather?q=' . $value['img_weather_location'] . '&lang=nl&units=metric&appid=1ef157782ad7c4c31320e64307062ae5';
     $restClient = new RESTclient($authentication = null);
@@ -32,7 +32,10 @@ foreach ($data as $key => $value ) {
     $value['temp'] = round(json_decode($response)->main->temp);
     $value['clouds'] = json_decode($response)->weather[0]->description;
     $value['humidity'] = json_decode($response)->main->humidity;
-    $weather_data[$key] = $value;
+   //$value['icon'] = json_decode($response)->weather[0]->icon;
+    $value['weather_icon'] = '<img src="http://openweathermap.org/img/w/' .json_decode($response)->weather[0]->icon . '.png" height="35" width="auto">';
+
+    $steden_data[$key] = $value;
 };
 /*
 $city_name = $data[0]["img_weather_location"];
@@ -50,12 +53,17 @@ echo '<br>';
 echo $humidity;
 */
 
+
+
+
     //get template
     $template = file_get_contents("templates/column.html");
 
     //merge
-    $output = MergeViewWithData( $template, $weather_data );
-    print $output;
+    $output = MergeViewWithData( $template, $steden_data );
+
+
+print $output;
 ?>
 
 

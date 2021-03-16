@@ -5,6 +5,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/OEF_2.1_OOP/log/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/OEF_2.1_OOP/log/log.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/OEF_2.1_OOP/steden.php" beforeDir="false" afterPath="$PROJECT_DIR$/OEF_2.1_OOP/steden.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OEF_2.1_OOP/templates/column.html" beforeDir="false" afterPath="$PROJECT_DIR$/OEF_2.1_OOP/templates/column.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +58,7 @@
       <updated>1612274628553</updated>
       <workItem from="1612274629712" duration="569000" />
       <workItem from="1612363852075" duration="22771000" />
-      <workItem from="1613391673688" duration="34465000" />
+      <workItem from="1613391673688" duration="38551000" />
     </task>
     <servers />
   </component>
@@ -73,10 +74,10 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="814" y="214" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1440.877@0.23.1440.877" timestamp="1615449018682" />
-    <state x="256" y="23" key="CommitChangelistDialog2" timestamp="1612376392746">
+    <state x="256" y="23" key="CommitChangelistDialog2" timestamp="1615881662306">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="256" y="23" key="CommitChangelistDialog2/0.23.1440.877@0.23.1440.877" timestamp="1612376392746" />
+    <state x="256" y="23" key="CommitChangelistDialog2/0.23.1440.877@0.23.1440.877" timestamp="1615881662306" />
     <state x="475" y="177" key="NewPhpClassDialog" timestamp="1615281448881">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
