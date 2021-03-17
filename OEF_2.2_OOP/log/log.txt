@@ -164,3 +164,48 @@
 2021-03-17 14:00:50: select * from eu_btw_codes where eub_id=1
 2021-03-17 14:08:41: UPDATE eu_btw_codes SET eub_land='', eub_code='' where eub_id=1 
 2021-03-17 14:11:38: UPDATE eu_btw_codes SET eub_land='Belgium', eub_code='BE' where eub_id=1 
+2021-03-17 14:54:47: select * from eu_btw_codes where eub_id=30
+2021-03-17 14:54:57: DELETE from eu_btw_codes where eub_id=30 
+2021-03-17 14:56:20: UPDATE eu_btw_codes SET eub_land='Belgie', eub_code='BE' where eub_id=1 
+2021-03-17 14:56:39: UPDATE eu_btw_codes SET eub_land='Bulgaije', eub_code='BG' where eub_id=2 
+2021-03-17 14:56:50: UPDATE eu_btw_codes SET eub_land='Cyprus', eub_code='CY' where eub_id=2 
+2021-03-17 14:57:33: UPDATE eu_btw_codes SET eub_land='Bulgarije', eub_code='BG' where eub_id=2 
+2021-03-17 14:57:47: UPDATE eu_btw_codes SET eub_land='Cyprus', eub_code='CY' where eub_id=3 
+2021-03-17 14:58:07: UPDATE eu_btw_codes SET eub_land='Denemarken', eub_code='DK' where eub_id=4 
+2021-03-17 14:58:23: UPDATE eu_btw_codes SET eub_land='Duitsland', eub_code='DE' where eub_id=5 
+2021-03-17 14:58:39: UPDATE eu_btw_codes SET eub_land='Estland', eub_code='EE' where eub_id=6 
+2021-03-17 14:58:53: UPDATE eu_btw_codes SET eub_land='Finland', eub_code='FI' where eub_id=7 
+2021-03-17 14:59:12: UPDATE eu_btw_codes SET eub_land='Frankrijk', eub_code='FR' where eub_id=8 
+2021-03-17 14:59:29: UPDATE eu_btw_codes SET eub_land='Griekenland', eub_code='GR' where eub_id=9 
+2021-03-17 14:59:45: UPDATE eu_btw_codes SET eub_land='Hungarije', eub_code='HU' where eub_id=10 
+2021-03-17 14:59:55: UPDATE eu_btw_codes SET eub_land='Ierland', eub_code='IE' where eub_id=10 
+2021-03-17 15:00:14: UPDATE eu_btw_codes SET eub_land='Italie', eub_code='IT' where eub_id=12 
+2021-03-17 15:00:31: UPDATE eu_btw_codes SET eub_land='Hongarije', eub_code='HU' where eub_id=10 
+2021-03-17 15:00:43: UPDATE eu_btw_codes SET eub_land='Ierland', eub_code='IE' where eub_id=11 
+2021-03-17 15:00:57: UPDATE eu_btw_codes SET eub_land='Kroatie', eub_code='HR' where eub_id=13 
+2021-03-17 15:01:15: UPDATE eu_btw_codes SET eub_land='Letland', eub_code='LV' where eub_id=14 
+2021-03-17 15:01:39: UPDATE eu_btw_codes SET eub_land='Litouwen', eub_code='LT' where eub_id=15 
+2021-03-17 15:02:23: UPDATE eu_btw_codes SET eub_land='Luxembourg', eub_code='LU' where eub_id=16 
+2021-03-17 15:02:36: UPDATE eu_btw_codes SET eub_land='Malta', eub_code='MT' where eub_id=17 
+2021-03-17 15:02:53: UPDATE eu_btw_codes SET eub_land='Nederland', eub_code='NL' where eub_id=18 
+2021-03-17 15:03:13: UPDATE eu_btw_codes SET eub_land='Noord-Ierland', eub_code='XI' where eub_id=19 
+2021-03-17 15:03:38: UPDATE eu_btw_codes SET eub_land='Oostenrijk', eub_code='AT' where eub_id=20 
+2021-03-17 15:03:49: UPDATE eu_btw_codes SET eub_land='Polen', eub_code='PL' where eub_id=21 
+2021-03-17 15:04:08: UPDATE eu_btw_codes SET eub_land='Portugal', eub_code='PT' where eub_id=22 
+2021-03-17 15:04:22: UPDATE eu_btw_codes SET eub_land='Roemenie', eub_code='RO' where eub_id=22 
+2021-03-17 15:04:35: UPDATE eu_btw_codes SET eub_land='Slovenie', eub_code='SI' where eub_id=22 
+2021-03-17 15:04:59: UPDATE eu_btw_codes SET eub_land='Slovakie', eub_code='SK' where eub_id=25 
+2021-03-17 15:05:13: UPDATE eu_btw_codes SET eub_land='Slovenie', eub_code='SI' where eub_id=24 
+2021-03-17 15:05:27: UPDATE eu_btw_codes SET eub_land='Roemenie', eub_code='RO' where eub_id=23 
+2021-03-17 15:05:45: UPDATE eu_btw_codes SET eub_land='Portugal', eub_code='PT' where eub_id=22 
+2021-03-17 15:06:33: UPDATE eu_btw_codes SET eub_land='Spanije', eub_code='ES' where eub_id=26 
+2021-03-17 15:06:53: UPDATE eu_btw_codes SET eub_land='Tsjechie', eub_code='CZ' where eub_id=27 
+2021-03-17 15:07:30: UPDATE eu_btw_codes SET eub_land='Verenigd Koninkrijk', eub_code='GB' where eub_id=28 
+2021-03-17 15:07:45: UPDATE eu_btw_codes SET eub_land='Sweden', eub_code='SE' where eub_id=29 
+2021-03-17 15:08:05: DELETE from eu_btw_codes where eub_id=31 
+2021-03-17 15:08:10: DELETE from eu_btw_codes where eub_id=32 
+2021-03-17 15:08:14: DELETE from eu_btw_codes where eub_id=33 
+2021-03-17 15:14:35: UPDATE eu_btw_codes SET eub_land='Belgie', eub_code='BB' where eub_id=1 
+2021-03-17 15:14:46: UPDATE eu_btw_codes SET eub_land='Belgie', eub_code='BE' where eub_id=1 
+2021-03-17 19:36:14: select * from eu_btw_codes where eub_id=1
+2021-03-17 19:46:42: select * from eu_btw_codes where eub_id=2

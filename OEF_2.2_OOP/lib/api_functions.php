@@ -72,3 +72,20 @@ function updateBtwCode($data, $id) {
         echo json_encode($res);
     }
 }
+
+function deleteBtwCode($id){
+    global $request_part;
+    global $container;
+
+    if ($request_part == "btwcode" )
+    {
+        $container->getDBManager()->ExecuteSQL("DELETE from eu_btw_codes where eub_id=$id ");
+        http_response_code(200);
+
+        $res = [
+            "status" => true,
+            "message" => "BTW is deleted"
+        ];
+        echo json_encode($res);
+    }
+}

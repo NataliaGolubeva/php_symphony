@@ -21,10 +21,13 @@ if($method === 'GET')
     } else {
         getBtwCodes();
     }
-} elseif ($method === 'POST') {
+}
+
+elseif ($method === 'POST') {
 addBtw($_POST);
 }
-elseif ($method === 'PATCH') {
+
+elseif ($method === 'PUT') {
     if (isset($id)) {
         $data = file_get_contents('php://input');
         $data = json_decode($data, true);
@@ -33,7 +36,11 @@ elseif ($method === 'PATCH') {
     }
 }
 
-
+elseif ($method === 'DELETE') {
+    if (isset($id)){
+        deleteBtwCode($id);
+    }
+}
 
 
 
